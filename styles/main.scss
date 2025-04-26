@@ -1,2 +1,57 @@
 @import 'partials/base';
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar{
+    background-color: white;
+}
+
+.mixed-layout{
+    display: flex;
+    flex-direction: column;
+   }
+
+@media (min-width: 1024px) {
+    h1{
+        font-size: 4em;
+    }
+    .main-container{
+        flex-direction: row;
+    }
+   .post, .sidebar{
+    flex: 1;
+   }
+   .mixed-layout {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    }
+    .first, .second{
+        flex: 1;
+    }
+    .second{
+        display: flex;
+        flex-direction: row;
+    }
+    .second-a, .second-b{
+        flex: 1;
+        justify-content: center;
+    }
+    
+}
